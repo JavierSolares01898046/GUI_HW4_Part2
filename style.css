@@ -1,0 +1,110 @@
+/* <!--
+File: style.css 
+GUI Assignment: Creating an Interactive Dynamic Table
+Javier Solares, UMass Lowell Computer Science, Javier_Solares@student.uml.edu
+Copyright (c) 2023 by Javier. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by JS on December, 2023 at 11:35 PM
+Description: This is the css code for the Dynamic Multiplication Table.
+This styles and formats the webpage properly.
+--> */
+
+body {
+    background-color: rgb(140, 135, 142);
+    margin: 2%;  
+}
+
+h1 {
+    text-decoration:underline;
+    text-underline-position: under;
+    text-decoration-thickness: 15%;
+    text-decoration-color: darkgreen;
+    text-align: center;
+}
+
+#tableTitle {
+    /* Using <span> to add an overline along with the underline decorations */
+    text-decoration:overline;
+    text-decoration-color:yellow;
+    text-decoration-thickness: 10%;
+    font-size: 150%;
+}
+
+.container {
+    text-align: center;
+}
+
+/* This gives a margin to the top from the title to the label */
+.mb-3:first-child {
+    margin-top: 2%;
+}
+
+.form-label {
+    font-size: 145%;
+    text-decoration: underline;
+    text-underline-position: under;
+    font-weight: bold;
+    text-decoration-thickness: 25%;
+    text-decoration-color: darkgreen;
+}
+
+/* This formats the input textbox */
+.form-control {
+    width: 75px;
+    display: inline-block;
+}
+
+/* Styling my submit button */
+.btn-primary {
+    background-color: yellow;
+    color: black;
+    font-weight: bolder;
+    border-width: 4px;
+    border-color: darkgreen;
+}
+
+/* This changes the background color of the top header */
+.table th {
+    color: yellow;
+    background-color: darkgreen;
+    border-width: 3px;
+    border-color: black;
+}
+
+.table tbody td {
+    max-width: 100% !important;
+}
+
+/* This changes the background color of the table data */
+.table tbody td {
+    color: darkgreen;
+    background-color: yellow;
+    max-width: 50px;
+    border-width: 3px;
+    border-color: black;
+    text-align: center;
+}
+
+/* Fixed scrollable container */
+.scrollable-container {
+    max-height: 450px;
+    overflow: auto;
+}
+
+/* This makes the header fixed when scrolling */
+#dynamic-table tbody th {
+    position: sticky;
+    left: 0;
+}
+
+label.error {
+    color: red;
+    font-style: italic;
+    margin-left: 2%; 
+    font-size: large; 
+}
+
+#sliderMinColumn, #sliderMaxColumn, #sliderMinRow, #sliderMaxRow {
+    width: 50%;
+    margin: 0 auto;
+}
